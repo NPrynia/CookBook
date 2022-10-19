@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+
+        android:id="@+id/svrec1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:backgroundTint="@color/theme2.1"
+            android:orientation="vertical">
+
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/tlbrec1"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:background="@color/theme2.1"
+                app:navigationIcon="@drawable/bakc_icon">
+
+                <TextView
+                    android:id="@+id/txtrec1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Суфле в микроволновке"
+                    android:layout_marginLeft="50dp"
+                    android:textColor="@color/Black"
+
+                    android:textSize="21dp"
+                    android:textStyle="bold" />
+
+            </android.support.v7.widget.Toolbar>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/fabr1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginTop="194dp"
+                    android:layout_marginEnd="38dp"
+                    android:layout_marginBottom="-7dp"
+
+                    android:backgroundTint="#00181f"
+                    android:onClick="fab"
+                    android:tint="@color/AppLight"
+                    app:srcCompat="@drawable/ic_like" />
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="220dp"
+                    android:outlineAmbientShadowColor="@color/Black"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/rec_desert2" />
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="250dp" />
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/txtDesciptionR1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Описание"
+                android:textColor="@color/theme2.1"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+
+            <View
+                android:id="@+id/v11"
+                android:layout_width="wrap_content"
+                android:layout_height="3dp"
+                android:background="@drawable/separator2" />
+
+            <TextView
+                android:id="@+id/txtrec11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Суфле в микроволновке - настолько нежный и вкусный десерт, что прямо диву каждый раз даешься, как это может быть настолько просто и быстро. Попробуйте приготовить суфле в микроволновке в домашних условиях - и вы тоже удивитесь, обещаю!"
+
+
+                android:textColor="@color/theme2.1"
+                android:textSize="20dp" />
+
+            <View
+                android:id="@+id/v12"
+                android:layout_width="wrap_content"
+                android:layout_height="3dp"
+                android:background="@drawable/separator2" />
+
+
+
+
+            <TextView
+                android:id="@+id/txtIngredientsR1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Ингридиенты"
+                android:textColor="@color/theme2.1"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+
+            <View
+                android:id="@+id/v13"
+                android:layout_width="wrap_content"
+                android:layout_height="3dp"
+                android:background="@drawable/separator2" />
+
+            <TextView
+                android:id="@+id/txtrec12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginLeft="5dp"
+                android:text=
+
+                    "   -Яйца — 3 Штуки (берем только белки от яиц)\n
+  - Сахар  — 80 Грамм    \n
+  - Шоколад  — 50 Грамм"
+                android:textColor="@color/theme2.1"
+                android:textSize="20dp" />
+
+            <View
+                android:id="@+id/v14"
+                android:layout_width="wrap_content"
+                android:layout_height="3dp"
+                android:background="@drawable/separator2" />
+
+            <TextView
+                android:id="@+id/txtrec13"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Приготовление"
+                android:textColor="@color/theme2.1"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+
+            <View
+                android:id="@+id/v15"
+                android:layout_width="wrap_content"
+                android:layout_height="3dp"
+                android:background="@drawable/separator2" />
+
+            <TextView
+                android:id="@+id/txtrec14"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text=
+                    "   1.Отделяем белки от желтков в яйцах. Будем использовать только белки. Сахара должно быть по количеству примерно столько же, сколько и белков, а шоколада - немного меньше. Можно также вместо него использовать просто какао-порошок.
+                   \n   2.Для этого простого рецепта суфле в микроволновке взбиваем белки с сахаром до того момента, когда начнут появляться твердые пики. Лучше это делать миксером сначала на средней, а потом на полной мощности
+                   \n   3.В готовую взбитую массу добавить шоколад кусочками, либо же какао-порошок. Можно добавить корицу, цукаты или фрукты - что есть в хозяйстве, в общем.
+                   \n   4.А теперь еще раз перемешаем, выкладываем в формочки, - и отправляем в микроволновку где-то на 30 секунд на полной мощности, - это уже зависит от того, насколько сильная у вас микроволновка. Словом, как поднимется - так и готово ваше суфле!"
+                android:textColor="@color/theme2.1"
+                android:textSize="20dp"
+                android:layout_marginLeft="5dp"
+                >
+
+            </TextView>
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="30dp">
+
+            </Space>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</android.support.constraint.ConstraintLayout>
